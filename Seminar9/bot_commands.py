@@ -1,5 +1,5 @@
 from telegram import Update
-from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
+from telegram.ext import ContextTypes
 import datetime
 from logi import log
 
@@ -20,7 +20,7 @@ async def time_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 
 
 async def sum_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    await log(Update, context)
+    await log(update, context)
     msg = update.message.text
     print(msg)
     items = msg.split()

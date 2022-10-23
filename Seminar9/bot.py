@@ -5,7 +5,7 @@ from bot_commands import help_command
 from bot_commands import sum_command
 
 
-app = ApplicationBuilder().token("5793996250:AAGw_5gQrj9UrnNVEgQ6Gzv3t12_4R4MKcU").build()
+app = ApplicationBuilder().token("5757263924:AAFJZIuluc7KVZ24_sGv-JK4UYU8hC9ATYE").build()
 
 app.add_handler(CommandHandler("hi", hi_command))
 app.add_handler(CommandHandler("time", time_command))
