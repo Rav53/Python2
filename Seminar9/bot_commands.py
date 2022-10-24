@@ -11,7 +11,7 @@ async def hi_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await log(update, context)
-    await update.message.reply_text(f'/hi\n/time\n/help')
+    await update.message.reply_text(f' hi\n time\n help\n sum\n vovan\n')
 
 
 async def time_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -27,3 +27,9 @@ async def sum_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
     x = int(items[1])
     y = int(items[2])
     await update.message.reply_text(f'{x} + {y} = {x+y}')
+
+
+async def vovan_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    await log(update, context)
+    await update.message.reply_text(f'Равиль тебе передаёт: СПАСИБО!!!')
+
